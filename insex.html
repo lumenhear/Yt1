@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMEN Speech & Hearing Care | Modern Clinic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader-container">
+    <div class="spinner-brand">
+      <!-- Custom SVG loader here -->
+      <i class="fas fa-lightbulb fa-3x fa-beat" style="color:#F3C623"></i>
+      <p>LUMEN</p>
+    </div>
+  </div>
+  <nav id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" onclick="route('home')">
+        <svg width="28" height="28"><!-- Custom Clinic Logo SVG here --></svg>
+        <span>LUMEN</span>
+        <span class="sub-logo">Speech & Hearing</span>
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" onclick="route('home')">Home</a></li>
+        <li><a href="#about" onclick="route('about')">About Us</a></li>
+        <li class="dropdown">
+          <a href="#services" class="dropbtn" onclick="route('services')">Services <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+            <a href="#speech-delay" onclick="route('speech-delay')">Speech Delay</a>
+            <a href="#autism-asd" onclick="route('autism-asd')">Autism ASD</a>
+            <a href="#hearing-disorders" onclick="route('hearing-disorders')">Hearing Care</a>
+            <a href="#stuttering" onclick="route('stuttering')">Stuttering</a>
+            <a href="#aphasia" onclick="route('aphasia')">Stroke/Aphasia</a>
+          </div>
+        </li>
+        <li><a href="#contact" class="btn-nav" onclick="route('contact')">Book Appointment</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main id="app">
+    <!-- Content is injected here via JS -->
+  </main>
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>LUMEN</h3>
+        <p>Empowering Communication.<br>Enhancing Lives.</p>
+        <div class="socials">
+          <a href="https://instagram.com/lumenhearingcare" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:lumenhearingcare@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="tel:9350158754"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <ul>
+          <li><i class="fas fa-map-pin"></i> Chandigarh</li>
+          <li><i class="fas fa-map-pin"></i> Mohali</li>
+          <li><i class="fas fa-map-pin"></i> Panchkula</li>
+          <li><i class="fas fa-map-pin"></i> Delhi</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p class="contact-link"><i class="fas fa-phone-alt"></i> 91 93501 58754</p>
+        <p class="contact-link"><i class="fas fa-envelope"></i> lumenhearingcare@gmail.com</p>
+        <p class="contact-link"><i class="fab fa-instagram"></i> lumenhearingcare</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 LUMEN Speech & Hearing Care. All Rights Reserved.</p></div>
+    <a href="https://wa.me/919350158754?text=Hi%20Lumen%20Care%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
